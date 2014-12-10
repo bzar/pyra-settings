@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/pyra-logo-final.svg</file>
+        <file>util.js</file>
+        <file>main.qml</file>
+        <file>WizardStep.qml</file>
+        <file>Wizard.qml</file>
+        <file>Button.qml</file>
+        <file>PyraText.qml</file>
+        <file>PyraInputField.qml</file>
+        <file>PyraFrame.qml</file>
+    </qresource>
+</RCC>
