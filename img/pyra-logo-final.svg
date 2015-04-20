@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" viewBox="0 0 21000 29700" preserveAspectRatio="xMidYMid" fill-rule="evenodd" clip-path="url(#presentation_clip_path)" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs>
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="21000" height="29700"/>
+  </clipPath>
+ </defs>
+ <g id="id2" class="Master_Slide" clip-path="url(#presentation_clip_path)">
+  <g id="bg-id2" visibility="visible" class="Background">
+   <rect fill="none" stroke="none" x="0" y="0" width="21000" height="29700"/>
+  </g>
+  <g id="bo-id2" visibility="visible" class="BackgroundObjects"/>
+ </g>
+ <g id="id1" class="Slide" visibility="visible" clip-path="url(#presentation_clip_path)">
+  <g class="Group">
+   <g class="com.sun.star.drawing.ClosedBezierShape">
+    <g>
+     <path fill="rgb(0,0,0)" stroke="none" d="M 8633,17239 C 7484,20474 8041,23385 8461,24131 6331,22910 2942,19781 2431,15914 1756,10819 7523,9028 7695,6314 8845,9384 7694,11229 6317,13022 5734,11927 6999,9042 6828,9341 4620,11585 2069,16702 6542,19557 6487,17382 6902,15281 7805,13346 8708,11410 9955,8851 8164,2662 12085,7295 10323,12481 8633,17239 Z"/>
+     <path fill="none" stroke="rgb(0,0,0)" d="M 8633,17239 C 7484,20474 8041,23385 8461,24131 6331,22910 2942,19781 2431,15914 1756,10819 7523,9028 7695,6314 8845,9384 7694,11229 6317,13022 5734,11927 6999,9042 6828,9341 4620,11585 2069,16702 6542,19557 6487,17382 6902,15281 7805,13346 8708,11410 9955,8851 8164,2662 12085,7295 10323,12481 8633,17239"/>
+    </g>
+   </g>
+   <g class="com.sun.star.drawing.ClosedBezierShape">
+    <g>
+     <path fill="rgb(0,0,0)" stroke="none" d="M 12000,13042 C 13149,9806 12592,6896 12172,6149 14302,7370 17691,10500 18202,14367 18877,19462 13110,21253 12938,23966 11788,20896 12939,19051 14316,17259 14899,18354 13634,21239 13805,20939 16013,18695 18564,13578 14091,10723 14146,12898 13731,15000 12828,16935 11925,18870 10678,21429 12469,27618 8548,22985 10310,17799 12000,13042 Z"/>
+     <path fill="none" stroke="rgb(0,0,0)" d="M 12000,13042 C 13149,9806 12592,6896 12172,6149 14302,7370 17691,10500 18202,14367 18877,19462 13110,21253 12938,23966 11788,20896 12939,19051 14316,17259 14899,18354 13634,21239 13805,20939 16013,18695 18564,13578 14091,10723 14146,12898 13731,15000 12828,16935 11925,18870 10678,21429 12469,27618 8548,22985 10310,17799 12000,13042"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
