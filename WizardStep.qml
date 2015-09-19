@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtGraphicalEffects 1.0
 
-Item {
+FocusScope {
   default property alias content: content.children
   property alias title: title.text
   property bool active: false

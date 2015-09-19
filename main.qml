@@ -2,6 +2,7 @@ import QtQuick 2.3
 import Setting 1.0
 import Pyra 1.0
 import QtQuick.Controls 1.2
+import "steps" as Steps
 
 ApplicationWindow {
   id: window
@@ -26,45 +27,43 @@ ApplicationWindow {
     anchors.topMargin: 32
     anchors.bottomMargin: 10
 
-    WizardStep {
-      id: usernameStep
+    Steps.WelcomeStep {
+      id: welcomeStep
 
-      PyraFrame {
-        anchors.fill: parent
-        PyraText {
-          text: "Does this thing work?\n\n\"Hellolo\" once again. This is the first-boot setup."
-        }
-
-        Column {
-          anchors.left: parent.left
-          anchors.right: parent.right
-          anchors.bottom: parent.bottom
-          spacing: 18
-          PyraInputField {
-            label: "Password:"
-            password: true
-            width: parent.width
-          }
-
-          PyraInputField {
-            label: "Confirm password:"
-            password: true
-            width: parent.width
-          }
-        }
-      }
     }
-
-    WizardStep {
+    Steps.FullnameStep {
       id: fullnameStep
     }
-    WizardStep {
-      id: passwordStep
+
+    Steps.UsernameStep {
+      id: usernameStep
+      function suggestion() {
+        var match = /\w+/.exec(fullnameStep.fullname);
+        return match !== null ? match[0].toLowerCase() : "";
+      }
+
+      username: suggestion()
     }
-    WizardStep {
+
+    Steps.PasswordStep {
+      id: passwordStep
+
+    }
+
+    Steps.HostnameStep {
+      id: hostnameStep
+      function suggestion() {
+        return usernameStep.username + "-pyra";
+      }
+
+      hostname: suggestion()
+    }
+
+    Steps.TimezoneStep {
       id: timezoneStep
     }
-    WizardStep {
+
+    Steps.DateTimeStep {
       id: datetimeStep
     }
 

@@ -19,6 +19,8 @@ Item {
     }
   }
 
+  onSelectedChanged: selected.focus = true
+
   Item {
     id: view
     width: parent.width

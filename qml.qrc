@@ -9,5 +9,12 @@
         <file>PyraText.qml</file>
         <file>PyraInputField.qml</file>
         <file>PyraFrame.qml</file>
+        <file>steps/UsernameStep.qml</file>
+        <file>steps/FullnameStep.qml</file>
+        <file>steps/PasswordStep.qml</file>
+        <file>steps/TimezoneStep.qml</file>
+        <file>steps/DateTimeStep.qml</file>
+        <file>steps/WelcomeStep.qml</file>
+        <file>steps/HostnameStep.qml</file>
     </qresource>
 </RCC>
