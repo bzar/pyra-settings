@@ -41,7 +41,7 @@ FocusScope {
     anchors.fill: parent
     source: content
     radius: active ? 0 : 256
-    visible: radius > 0
+    visible: radius > 0 && (content.children.length > 1 || title.text.length > 0)
 
     Behavior on radius {
       NumberAnimation {

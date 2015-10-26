@@ -4,8 +4,10 @@ Item {
   default property alias steps: stepContainer.children
   property alias selectedIndex: view.selectedIndex
   property alias selected: view.selected
-  property bool canNext: selected.valid && selectedIndex + 1 < steps.length && steps[selectedIndex + 1].activatable
-  property bool canPrev: selectedIndex - 1 >= 0 && steps[selectedIndex - 1].activatable
+  property bool hasNext: selectedIndex + 1 < steps.length
+  property bool canNext: selected.valid && hasNext && steps[selectedIndex + 1].activatable
+  property bool hasPrev: selectedIndex - 1 >= 0
+  property bool canPrev: hasPrev && steps[selectedIndex - 1].activatable
 
   function next() {
     if(canNext) {
@@ -87,6 +89,7 @@ Item {
       text: "Back"
       onClicked: prev()
       enabled: canPrev
+      visible: hasPrev
       anchors.left: parent.left
       anchors.margins: 6
     }

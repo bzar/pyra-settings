@@ -16,5 +16,12 @@
         <file>steps/DateTimeStep.qml</file>
         <file>steps/WelcomeStep.qml</file>
         <file>steps/HostnameStep.qml</file>
+        <file>steps/StartupStep.qml</file>
+        <file>steps/BatteryStep.qml</file>
+        <file>steps/PrimaryActionButtonStep.qml</file>
+        <file>steps/UsageNotes.qml</file>
+        <file>steps/UserStep.qml</file>
+        <file>img/background.png</file>
     </qresource>
+    <qresource prefix="/img"/>
 </RCC>

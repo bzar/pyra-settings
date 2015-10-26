@@ -7,7 +7,8 @@ SOURCES += main.cpp \
     timezonedatamodel.cpp \
     qevdev.cpp \
     pyracontroller.cpp \
-    evdevdevicelistmodel.cpp
+    evdevdevicelistmodel.cpp \
+    battery.cpp
 
 RESOURCES += qml.qrc
 
@@ -22,7 +23,8 @@ HEADERS += \
     timezonedatamodel.h \
     qevdev.h \
     pyracontroller.h \
-    evdevdevicelistmodel.h
+    evdevdevicelistmodel.h \
+    battery.h
 
 OTHER_FILES += \
     scripts/*

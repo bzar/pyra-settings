@@ -1,5 +1,6 @@
 import QtQuick 2.3
 import Setting 1.0
+import Battery 1.0
 import Pyra 1.0
 import QtQuick.Controls 1.2
 import "steps" as Steps
@@ -11,52 +12,45 @@ ApplicationWindow {
   visible: true
   onClosing: Qt.quit()
 
-  Rectangle {
+  Image {
     anchors.fill: parent
-    color: "#000"
+    source: "img/background.png"
+    fillMode: Image.PreserveAspectCrop
   }
 
   PyraController {
 
   }
 
+  Battery {
+    id: battery
+    source: "/tmp/"
+  }
+
   Wizard {
+    id: wizard
     anchors.fill: parent
     anchors.leftMargin: 168
     anchors.rightMargin: 168
     anchors.topMargin: 32
     anchors.bottomMargin: 10
+/*
+    Steps.StartupStep {
+      id: startupStep
 
+    }
     Steps.WelcomeStep {
       id: welcomeStep
 
     }
-    Steps.FullnameStep {
-      id: fullnameStep
+    Steps.BatteryStep {
+      id: batteryStep
     }
-
-    Steps.UsernameStep {
-      id: usernameStep
-      function suggestion() {
-        var match = /\w+/.exec(fullnameStep.fullname);
-        return match !== null ? match[0].toLowerCase() : "";
-      }
-
-      username: suggestion()
+    Steps.PrimaryActionButtonStep {
+      id: primaryActionButtonStep
     }
-
-    Steps.PasswordStep {
-      id: passwordStep
-
-    }
-
-    Steps.HostnameStep {
-      id: hostnameStep
-      function suggestion() {
-        return usernameStep.username + "-pyra";
-      }
-
-      hostname: suggestion()
+    Steps.UsageNotes {
+      id: usageNotesStep
     }
 
     Steps.TimezoneStep {
@@ -66,6 +60,13 @@ ApplicationWindow {
     Steps.DateTimeStep {
       id: datetimeStep
     }
-
+*/
+    Steps.UserStep {
+      id: userStep
+      function suggestion() {
+        var match = /\w+/.exec(fullnameStep.fullname);
+        return match !== null ? match[0].toLowerCase() : "";
+      }
+    }
   }
 }
